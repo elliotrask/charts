@@ -16,7 +16,10 @@ dependencies:
   # The latest pub version is commented out and shown below as an example.
   # charts_common: 0.6.0
   charts_common:
-    path: ../charts_common/
+    git:
+      url: https://github.com/elliotrask/charts.git
+      ref: web
+      path: charts_common
   collection: ^1.14.5
   flutter_web: any
   flutter_web_ui: any
