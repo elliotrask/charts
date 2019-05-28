@@ -13,7 +13,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'dart:ui' show TextAlign, TextDirection;
+import 'package:flutter_web_ui/ui.dart' show TextAlign, TextDirection;
 import 'package:charts_common/common.dart' as common
     show
         MaxWidthStrategy,
@@ -21,7 +21,7 @@ import 'package:charts_common/common.dart' as common
         TextDirection,
         TextMeasurement,
         TextStyle;
-import 'package:flutter/rendering.dart'
+import 'package:flutter_web/rendering.dart'
     show Color, TextBaseline, TextPainter, TextSpan, TextStyle;
 
 /// Flutter implementation for text measurement and painter.

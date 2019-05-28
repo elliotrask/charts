@@ -13,13 +13,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'dart:math' show max, pow, Point;
-import 'dart:ui';
+import 'dart:math' show max, pow;
+import 'dart:math' as math;
 
-import 'package:flutter/widgets.dart' show AnimationController;
+import 'package:flutter_web/widgets.dart' show AnimationController;
 
 import 'package:charts_common/common.dart' as common
     show BaseChart, ChartBehavior, PanBehavior, PanningCompletedCallback;
+import 'package:flutter_web_ui/ui.dart';
 import 'package:meta/meta.dart' show immutable;
 
 import '../../base_chart_state.dart' show BaseChartState;
@@ -103,7 +104,7 @@ mixin FlutterPanBehaviorMixin<D> on common.PanBehavior<D>
   }
 
   @override
-  bool onTapTest(Point<double> chartPoint) {
+  bool onTapTest(math.Point<double> chartPoint) {
     super.onTapTest(chartPoint);
 
     stopFlingAnimation();
@@ -113,7 +114,7 @@ mixin FlutterPanBehaviorMixin<D> on common.PanBehavior<D>
 
   @override
   bool onDragEnd(
-      Point<double> localPosition, double scale, double pixelsPerSec) {
+      math.Point<double> localPosition, double scale, double pixelsPerSec) {
     if (isPanning) {
       // Ignore slow drag gestures to avoid jitter.
       if (pixelsPerSec.abs() < minimumFlingVelocity) {

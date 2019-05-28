@@ -14,7 +14,7 @@
 // limitations under the License.
 
 import 'package:charts_common/common.dart' as common show Color;
-import 'dart:ui' as ui;
+import 'package:flutter_web_ui/ui.dart' as ui;
 
 class ColorUtil {
   static ui.Color toDartColor(common.Color color) {

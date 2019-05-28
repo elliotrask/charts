@@ -13,8 +13,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'dart:ui' show TextDirection;
-import 'package:flutter/material.dart'
+import 'package:flutter_web_ui/ui.dart' show TextDirection;
+import 'package:flutter_web/material.dart'
     show
         AnimationController,
         BuildContext,
@@ -22,7 +22,7 @@ import 'package:flutter/material.dart'
         TickerProviderStateMixin,
         Widget;
 import 'package:charts_common/common.dart' as common;
-import 'package:flutter/widgets.dart'
+import 'package:flutter_web/widgets.dart'
     show Directionality, LayoutId, CustomMultiChildLayout;
 import 'behaviors/chart_behavior.dart'
     show BuildableBehavior, ChartBehavior, ChartStateBehavior;

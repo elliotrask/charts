@@ -13,7 +13,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'dart:ui' as ui show Gradient, Shader;
+import 'package:flutter_web_ui/ui.dart' as ui show Gradient, Shader;
 import 'dart:math' show Point, Rectangle, max;
 import 'package:charts_common/common.dart' as common
     show
@@ -26,7 +26,7 @@ import 'package:charts_common/common.dart' as common
         StyleFactory,
         TextElement,
         TextDirection;
-import 'package:flutter/material.dart';
+import 'package:flutter_web/material.dart';
 import 'text_element.dart' show TextElement;
 import 'canvas/circle_sector_painter.dart' show CircleSectorPainter;
 import 'canvas/line_painter.dart' show LinePainter;
